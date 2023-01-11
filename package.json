@@ -1,11 +1,10 @@
 {
   "name": "code-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "copy some code into your project.",
   "main": "main.ts",
   "scripts": {
-    "serve": "ts-node main.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "ts-node main.ts"
   },
   "author": "Devo Zou",
   "license": "ISC",
