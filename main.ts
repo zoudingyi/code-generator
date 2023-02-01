@@ -14,7 +14,7 @@ class codeGenerator {
   private owner: string;
   private repo: string;
   private path: string;
-  private branch: string;
+  private branch: string = '';
   private savePath: string;
 
   constructor(data: github) {
@@ -61,9 +61,9 @@ class codeGenerator {
 }
 
 new codeGenerator({
-  owner: "vbenjs", // 仓库拥有者
-  repo: "vue-vben-admin", // 仓库名称
-  path: ".commitlintrc.js", // 文件路径
+  owner: "chuzhixin", // 仓库拥有者
+  repo: "vue-admin-better", // 仓库名称
+  path: "src/components/VabCharge/index.vue", // 文件路径
   branch: "", // 指定分支 不填默认主分支
-  savePath: "E:/TestProgram/commitlintrc.js", // 保存文件路径
+  savePath: "E:/WorkSpace/zx-template/src/refactor/components/VabCharge.vue", // 保存文件路径
 }).init();
